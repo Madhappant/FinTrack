@@ -1,0 +1,411 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#e5eeff", "tertiary": "#00190e", "tertiary-fixed-dim": "#68dba9", "on-secondary-fixed": "#00174b", "secondary-fixed-dim": "#b4c5ff", "on-secondary": "#ffffff", "on-background": "#0b1c30", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "inverse-on-surface": "#eaf1ff", "surface-dim": "#cbdbf5", "surface-container-highest": "#d3e4fe", "on-surface-variant": "#45474c", "on-error": "#ffffff", "tertiary-container": "#00301f", "on-surface": "#0b1c30", "on-tertiary-fixed": "#002114", "error-container": "#ffdad6", "tertiary-fixed": "#85f8c4", "background": "#f8f9ff", "on-secondary-fixed-variant": "#003ea8", "primary-fixed-dim": "#bcc7de", "surface-container-low": "#eff4ff", "on-tertiary-fixed-variant": "#005137", "on-tertiary-container": "#24a375", "inverse-surface": "#213145", "inverse-primary": "#bcc7de", "primary-fixed": "#d8e3fb", "on-error-container": "#93000a", "surface-variant": "#d3e4fe", "surface": "#f8f9ff", "error": "#ba1a1a", "on-primary-container": "#8590a6", "primary": "#091426", "secondary": "#0051d5", "on-secondary-container": "#fefcff", "on-primary-fixed-variant": "#3c475a", "secondary-fixed": "#dbe1ff", "secondary-container": "#316bf3", "surface-container-high": "#dce9ff", "on-primary-fixed": "#111c2d", "outline": "#75777d", "surface-tint": "#545f73", "outline-variant": "#c5c6cd", "surface-container-lowest": "#ffffff", "primary-container": "#1e293b", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter": "1rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "margin": "1rem" }, "fontFamily": { "body-md": ["Manrope"], "headline-lg": ["Manrope"], "body-sm": ["Manrope"], "body-lg": ["Manrope"], "headline-sm": ["Manrope"], "display-lg": ["Manrope"], "label-md": ["Manrope"], "headline-md": ["Manrope"], "label-sm": ["Manrope"], "display-lg-mobile": ["Manrope"], "label-lg": ["Manrope"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:y none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-4 flex items-center justify-between text-on-surface text-label-sm font-label-sm"><span class="font-label-md text-label-md tracking-tight">09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] leading-none">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px] leading-none">wifi</span><div class="flex items-center gap-1"><span class="text-[11px] font-medium leading-none">98%</span><span class="material-symbols-outlined text-[16px] leading-none">battery_full</span></div></div></div><div class="h-16 px-4 flex items-center justify-between"><div class="flex items-center gap-2.5 min-w-0"><img alt="FinTrack App Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtnu-UeABNOB7xZj5wGNA-E5TTPC8P-ZXqYha9RzKnvjY082MSWOelyrUyyTVdUx0rWKhvaP5Ls7z6iGf3M930JqSC9QZv3EAbHA2ieF4zlRBG9bwsEbcahf745IsQXRaIUbnwvNt9mnTBw3BlAXfICqLtDjb42dYRflckErcSHkEVLHmA_1xTG-qY36MUz9PjEuDGg3VnlKxKdaNpq874NY55hD0MWFWMyb2Ae0Axo-eipd3xETyULg"><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="text-headline-sm font-headline-sm tracking-tight text-on-surface truncate">FinTrack</span><div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span><span class="text-[10px] font-bold tracking-wider uppercase text-on-tertiary-container">OFFLINE</span></div></div><span class="text-label-sm font-label-sm text-on-surface-variant truncate">Reports &amp; Analytics</span></div></div><div class="flex items-center gap-1 shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><button aria-label="Account Profile" class="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-90 active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_rgba(15,23,42,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEgNfNYt0eCazHjvtIbUBgTDTVAgezDwWe0M9vnGf4NZuGxi6GdJNlww1khigXkyK2Xqma6Dc8MtG5HHcpkJSfDbbiDGACa-kKbZrS0SHQHEAAZ64vMbm--SBB2__O_mOiYjtW6EQ0Uo50XyOl2PwliY55V_uglhgHoOOREsDb2dB0LgJVkncU5xFLhtkO2Wo4Q_MHcZQ1m6MNLYV8fQtu1C1VI67dyKEreZSWPVQVsMxQG1FC3mlJ6Q"></button></div></div></header><main class="flex flex-col relative w-full pt-[88px] pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full px-4 py-4 space-y-5 selection:bg-secondary-fixed">
+<!-- Header Breadcrumb & Subtitle Context -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span>More</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Settings</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Data &amp; Backup</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Offline Vault</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Hardware-bound, AES-256 encrypted local ledger</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">enhanced_encryption</span>
+</div>
+</div>
+</div>
+<!-- 1. Security & Offline Storage Status Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-primary text-on-primary p-5 shadow-md">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-tertiary-container/80 flex items-center justify-center text-tertiary-fixed shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed font-bold">Absolute Air-Gap</span>
+<h2 class="font-headline-sm text-headline-sm text-on-primary">100% Offline &amp; Private</h2>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-sm text-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+        Zero Sync
+      </span>
+</div>
+<p class="mt-3.5 font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">
+      Zero cloud synchronization. All financial entries, receipts, and audit logs reside strictly on this device's encrypted storage (AES-256 GCM).
+    </p>
+<!-- DB Stats Grid -->
+<div class="mt-4 pt-3.5 grid grid-cols-2 gap-2 bg-primary-container/60 rounded-xl p-3 backdrop-blur-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">Local Database Health</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed">verified</span>
+<span class="font-label-md text-label-md text-on-primary">SQLite Cipher v4.5</span>
+</div>
+</div>
+<div class="flex flex-col pl-2">
+<span class="font-label-sm text-label-sm text-on-primary-container">Footprint &amp; Records</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-primary-fixed-dim">data_usage</span>
+<span class="font-label-md text-label-md text-on-primary">4.8 MB <span class="font-body-sm text-body-sm text-primary-fixed-dim">(48 txns, 12 receipts)</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Primary Backup Status & Quick Actions -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">cloud_off</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Snapshot Status</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last manual verification</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px] text-on-tertiary-container">check_circle</span>
+        Verified &amp; Encrypted
+      </span>
+</div>
+<!-- Location details pill -->
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last Successful Snapshot</span>
+<span class="font-label-md text-label-md text-on-surface">Today, 30 Sep 2026 · 10:45 AM</span>
+</div>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[16px] shrink-0 text-secondary">folder_zip</span>
+<span class="truncate font-body-sm text-body-sm">/Documents/FinTrack/Backups/fintrack_vault_20260930.bak</span>
+</div>
+</div>
+<!-- Quick CTA Buttons -->
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<button class="flex items-center justify-center gap-2 h-12 px-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg active:scale-[0.98] transition-all shadow-sm" id="backupTriggerBtn">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Backup Now</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-12 px-3 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg active:scale-[0.98] transition-all" id="restoreTriggerBtn">
+<span class="material-symbols-outlined text-[20px]">settings_backup_restore</span>
+<span>Restore File</span>
+</button>
+</div>
+</div>
+<!-- 3. Scheduled Automated Local Backup -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Automated Local Cycle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Runs offline during device idle</p>
+</div>
+</div>
+<!-- Material Style Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="autoBackupToggle" type="checkbox">
+<div class="w-11 h-6 bg-surface-variant rounded-full peer peer-checked:bg-primary peer-focus:outline-none transition-colors after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-5"></div>
+</label>
+</div>
+<!-- Schedule Preferences Options -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Frequency</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bedtime</span>
+<span class="font-label-md text-label-md text-on-surface">Daily · 02:00 AM</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Retention Rule</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">history</span>
+<span class="font-label-md text-label-md text-on-surface">Last 7 Snapshots</span>
+</div>
+</div>
+</div>
+<!-- Storage destination selection -->
+<div class="flex flex-col space-y-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Primary Target Storage</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md text-left transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">smartphone</span>
+<span class="truncate">Device Storage</span>
+</button>
+<button class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md text-left transition-colors hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">sd_card</span>
+<span class="truncate">SD Card / USB</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4. Available Local Backup Snapshots -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recent Snapshots</h3>
+<span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-label-sm text-label-sm text-on-surface font-bold">3</span>
+</div>
+<button class="font-label-md text-label-md text-secondary hover:underline">Manage Path</button>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-1.5 flex flex-col space-y-1">
+<!-- Snapshot 1 -->
+<div class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">encrypted</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">fintrack_2026-09-30_1045.bak</p>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>4.8 MB</span>
+<span>•</span>
+<span>48 txns</span>
+<span>•</span>
+<span class="text-on-tertiary-container font-medium">Today, 10:45 AM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 ml-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md active:scale-95 transition-all">
+            Restore
+          </button>
+<button aria-label="More Options" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container mx-3"></div>
+<!-- Snapshot 2 -->
+<div class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">fintrack_2026-09-29_0200.bak</p>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>4.6 MB</span>
+<span>•</span>
+<span>44 txns</span>
+<span>•</span>
+<span>Yesterday, 02:00 AM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 ml-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md active:scale-95 transition-all">
+            Restore
+          </button>
+<button aria-label="More Options" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container mx-3"></div>
+<!-- Snapshot 3 -->
+<div class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[20px]">waves</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">fintrack_2026-09-23_0200.bak</p>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>4.1 MB</span>
+<span>•</span>
+<span>39 txns</span>
+<span>•</span>
+<span>7 days ago (Weekly)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 ml-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md active:scale-95 transition-all">
+            Restore
+          </button>
+<button aria-label="More Options" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Data Export & Portable Formats -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col space-y-3.5">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Export Financial Data</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Exports are saved to your local Downloads folder without touching any network.
+      </p>
+</div>
+<div class="flex flex-col space-y-2 pt-1">
+<!-- Excel / CSV Export -->
+<button class="w-full flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors text-left group">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">table_chart</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface block">Export as Excel / CSV</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Raw income &amp; expense ledgers for accounting / CA</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">download</span>
+</button>
+<!-- Encrypted JSON Export -->
+<button class="w-full flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors text-left group">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">data_object</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface block">Export Encrypted JSON</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Full schema migration bundle with verification key</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">download</span>
+</button>
+<!-- Audit PDF Bundle -->
+<button class="w-full flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors text-left group">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface block">Generate Audit PDF Bundle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Consolidated Q3 statements with stamped checksums</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-0.5 transition-transform">print</span>
+</button>
+</div>
+</div>
+<!-- 6. Safety & Danger Zone -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex flex-col space-y-3.5">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Safety &amp; Storage Hygiene</h3>
+</div>
+<!-- Friendly Security Advisory -->
+<div class="p-3 rounded-xl bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+<span class="font-bold text-on-surface">Notice:</span> Because FinTrack is completely offline, there is no remote cloud recovery. Always maintain at least one external backup prior to clearing cache or device wipe.
+    </div>
+<div class="flex flex-col space-y-2">
+<!-- Clear Cache Action -->
+<div class="p-3 rounded-xl bg-surface-container-lowest flex items-center justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Clear Transaction Cache</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Frees temporary receipt thumbnails (Safe · 1.2 MB)</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md active:scale-95 transition-all" id="clearCacheBtn">
+          Clear
+        </button>
+</div>
+<!-- Wipe All Local Data -->
+<div class="p-3 rounded-xl bg-error-container/40 flex items-center justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-error block font-bold">Wipe All Local Ledger Data</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Destructive · Requires Master PIN authentication</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md active:scale-95 transition-all shadow-sm" id="wipeDataBtn">
+          Wipe Vault
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Toast (Hidden initially) -->
+<div class="fixed bottom-24 left-4 right-4 z-40 transform translate-y-32 transition-transform duration-300 ease-out bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-lg flex items-center justify-between" id="toastMessage">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md" id="toastText">Snapshot successfully created.</span>
+</div>
+<button class="text-inverse-on-surface/80 hover:text-inverse-on-surface" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  function showToast(text, isError = false) {
+    const toast = document.getElementById('toastMessage');
+    const toastText = document.getElementById('toastText');
+    const toastIcon = document.getElementById('toastIcon');
+    if (!toast) return;
+
+    toastText.textContent = text;
+    if (isError) {
+      toastIcon.textContent = 'warning';
+      toastIcon.className = 'material-symbols-outlined text-[20px] text-error-container';
+    } else {
+      toastIcon.textContent = 'check_circle';
+      toastIcon.className = 'material-symbols-outlined text-[20px] text-tertiary-fixed';
+    }
+
+    toast.classList.remove('translate-y-32');
+    toast.classList.add('translate-y-0');
+
+    setTimeout(() => {
+      dismissToast();
+    }, 3500);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('toastMessage');
+    if (toast) {
+      toast.classList.remove('translate-y-0');
+      toast.classList.add('translate-y-32');
+    }
+  }
+
+  document.getElementById('backupTriggerBtn')?.addEventListener('click', () => {
+    showToast('Encrypted snapshot fintrack_2026-09-30_1045.bak saved to Documents.');
+  });
+
+  document.getElementById('restoreTriggerBtn')?.addEventListener('click', () => {
+    showToast('File picker opened: Select .bak archive.');
+  });
+
+  document.getElementById('clearCacheBtn')?.addEventListener('click', () => {
+    showToast('Cache cleared. 1.2 MB reclaimed safely.');
+  });
+
+  document.getElementById('wipeDataBtn')?.addEventListener('click', () => {
+    const pin = prompt('SECURITY CHECK: Enter Master PIN to confirm destruction:');
+    if (pin) {
+      showToast('PIN Verified: Safe demo mode prevented actual erase.', true);
+    }
+  });
+
+  document.getElementById('autoBackupToggle')?.addEventListener('change', (e) => {
+    const state = e.target.checked ? 'Enabled' : 'Disabled';
+    showToast(`Automated nightly backup ${state}.`);
+  });
+</script></main><div class="fixed bottom-24 right-4 z-50"><a aria-label="Add Transaction" class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-[0_8px_24px_rgba(15,23,42,0.18)] active:scale-95 transition-transform hover:bg-primary-container" data-path="add-transaction" href="#"><span class="material-symbols-outlined text-[28px]">add</span></a></div><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="h-16 px-2 flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="home" href="#"><div class="w-12 h-7 rounded-full flex items-center justify-center group-[.text-primary]:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">dashboard</span></div><span class="text-label-sm font-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="transactions" href="#"><div class="w-12 h-7 rounded-full flex items-center justify-center group-[.text-primary]:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">receipt_long</span></div><span class="text-label-sm font-label-sm mt-0.5">Ledger</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-primary font-bold transition-colors group" data-path="reports" href="#"><div class="w-12 h-7 rounded-full flex items-center justify-center bg-surface-container-high group-[.text-primary]:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">analytics</span></div><span class="text-label-sm font-label-sm mt-0.5">Reports</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="budget" href="#"><div class="w-12 h-7 rounded-full flex items-center justify-center group-[.text-primary]:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">pie_chart</span></div><span class="text-label-sm font-label-sm mt-0.5">Budget</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors group" data-path="more" href="#"><div class="w-12 h-7 rounded-full flex items-center justify-center group-[.text-primary]:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">tune</span></div><span class="text-label-sm font-label-sm mt-0.5">More</span></a></div><div class="w-full flex justify-center pb-1.5 pt-0.5"><div class="w-32 h-1 rounded-full bg-on-surface/20"></div></div></nav></body></html>

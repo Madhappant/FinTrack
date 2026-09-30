@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Expo / Mobile build
+.expo/
+mobile/.expo/
+dist/
+mobile/dist/
+web-build/
+mobile/web-build/
+expo-env.d.ts
+mobile/expo-env.d.ts
+
+# SQLite Database and local cache
+backend/dev.db
+backend/dev.db-journal
+*.db
+*.db-journal
+
+# Environment variables
+.env
+backend/.env
+.env*.local
+
+# Logs
+logs/
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS generated
+.DS_Store
+Thumbs.db
